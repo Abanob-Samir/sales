@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="asset/css/all.min.css" >
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  <link rel="stylesheet" href="asset/css/main.css" >
+</head>
+
+<body class="bodycolordark">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-black" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Branches.html">Branchs </a>
+          </li>
+         
+  
+        </ul>
+        <span id="theme-switch" onclick="changeMode()">
+          <span id="light-theme"><i class="fa-solid fa-sun fa-lg"></i></span>
+          <span id="dark-theme"><i class="fa-solid fa-moon fa-lg" ></i></span>
+          <span id="ball"></span>
+        </span>
+      </div>
+    </div>
+  </nav>
+  
+  <!--button class="col-1 btn btn-light" id="mode" onclick="changeMode()"> <i class="fa-solid fa-sun"></i> </button-->
+<h1>Input Product</h1>
+<div class="container border border-5 ">
+  <div class="alert alert-danger alert-dismissible fade show none" >
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+  <div class="row"><input type="text" placeholder="Title" id="Title" class="col-12"></div>
+  <div class="row">
+    <input type="number" placeholder="Price"  id="Price"class="col-2 ">
+    <input type="number" placeholder="Taxes" id="Taxes" class="col-2 ">
+    <input type="number" placeholder="Transfer Cost" id="Transfer Cost" class="col-3">
+    <input type="number" placeholder="Discount"  id="Discount"class="col-2">
+    <input type="number" placeholder="Total" id="Total" class="col-2">
+  </div>
+  <div class="row"><input type="text" placeholder="Count" class="col-12"></div>
+  <div class="row"><input type="text" placeholder="Product img URL (optinal)" class="col-12"></div>
+  <div class="row"><select  id="Branch">
+    <option value="0" selected disabled> select Branch</option>
+    <option value="Branch 1">Branch 1</option>
+    <option value="Branch 2">Branch 2</option>
+    <option value="Branch 3">Branch 3</option>
+  </select></div>
+  <div class="row"><button id="creat" class="col-12 btn btn-info">Creat</button></div>
+  
+</div>
+<h1 id="test">Sold Product</h1>
+<div class="container-fluid border border-5 ">
+  
+  <div   class="row" >
+    <div id="output" claas="col-12"></div>
+     <table >
+      <thead>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Taxes</th>
+      <th>T:cost</th>
+      <th>Discount</th>
+      <th>Total</th>
+      <th>img</th>
+      <th>Department</th>
+      <th>Date</th>
+      <th>Action</th>
+    </thead>
+
+    <tbody id="table">
+
+    </tbody>
+     </table>
+     
+    
+  </div>
+ 
+
+  
+
+
+  <script src="asset/JS/main.js"></script>
+   <script src="asset/JS/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    
+    
+}
+
+.bodycolordark{
+    background-color: #1d1c1c;
+    color:antiquewhite;
+}
+
+
+h1{
+color: indigo;
+font-weight: bolder;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+margin:20px 0px;
+}
+
+.row{
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+
+border-radius:10px ;
+
+}
+button{
+    
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.error{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    padding:40px;
+}
+table{
+    
+text-align: center;
+align-items: center;
+}
+thead{
+    background-color: #3333;
+    height: 50px;
+}
+tr:nth-child(even) {
+    background-color: #3333;
+  }
+.none{
+    display: none;
+}
+
+#theme-switch{
+    width:75px;
+    height:40px;
+    margin: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    
+}
+
+#light-theme i{
+    height:30px;
+    width: 30px;
+    display: flex;
+    justify-content: space-evenly;
+padding: 20px;
+color: yellow  ;
+
+
+}
+#dark-theme i{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: space-evenly;
+padding: 20px;
+color:yellow;
+}
+#ball{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50px;
+    background-color: white;
+    opacity: .7;
+    top:5px;
+    left:41.5px;
+}
+
+.nav-item a{
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.navbar-black{
+background-color: #1d1c1c;
+
+}
+.navbar-white{
+background-color: white;
+
+}
+.bounce:hover{
+    animation: bounce 1s ease infinite;
+}
+@keyframes bounce {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+}
+tfoot{
+    height: 75px;
+    font-size: larger;
+}
+#total-name{
+    background-color: #dc3545;
+}
